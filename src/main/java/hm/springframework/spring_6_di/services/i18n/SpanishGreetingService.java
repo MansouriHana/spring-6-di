@@ -9,6 +9,6 @@ import org.springframework.stereotype.Service;
 public class SpanishGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hola Mundo - ES";
+        return "Hola Mundo - ES   ";
     }
 }
