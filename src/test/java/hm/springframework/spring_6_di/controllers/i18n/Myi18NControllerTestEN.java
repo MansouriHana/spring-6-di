@@ -1,22 +1,20 @@
-package hm.springframework.spring_6_di.controllers;
-
+package hm.springframework.spring_6_di.controllers.i18n;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
+@ActiveProfiles("EN")
 @SpringBootTest
-class ConstructorInjectedControllerTest {
+public class Myi18NControllerTestEN {
 
     @Autowired
-    ConstructorInjectedController controller;
-
-
+    Myi18NController myi18NController;
 
     @Test
     void sayHello() {
 
-        System.out.println(controller.sayHello());
+        System.out.println(myi18NController.sayHello());
     }
 }
